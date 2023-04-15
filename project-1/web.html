@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+
+            background: rgb(2, 0, 36);
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(87, 56, 77, 1) 53%, rgba(39, 75, 154, 1) 84%, rgba(46, 160, 203, 1) 100%, rgba(17, 192, 224, 1) 100%);
+        }
+
+
+        .container {
+            height: 75vh;
+            width: 100%;
+
+            /* border: 2px solid rgb(83, 110, 209); */
+
+
+        }
+
+        .container img {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            filter: blur(1px);
+        }
+
+        .head {
+            display: flex;
+
+            color: white;
+            position: absolute;
+            top: 30px;
+            left: 0;
+            height: 40px;
+            width: 100%;
+        }
+
+        .navbar {
+            font-family: 'Open Sans', sans-serif;
+            display: inline-block;
+            align-self: center;
+            margin: auto;
+            margin-left: 224px;
+            width: 50%;
+        }
+
+        .navbar li {
+            list-style: none;
+            display: inline-block;
+            padding-left: 15%;
+            font-size: 20px;
+
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .head span {
+            font-family: 'Oswald', sans-serif;
+            margin-top: auto;
+            margin-bottom: auto;
+            display: inline-block;
+            width: 9%;
+            text-align: center;
+            font-size: x-large;
+            animation: popup 5s 0.5s infinite;
+            transition: popup 5s ease-in-out;
+        }
+
+        .sbar {
+            font-family: 'Oswald', sans-serif;
+            display: inline-flex;
+            width: 20%;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .sbar input {
+            border-radius: 12px;
+            border: 3px solid #62363a;
+            text-align: center;
+            height: 25px;
+            width: 179px;
+        }
+
+        .sbar button {
+            font-family: 'Oswald', sans-serif;
+            width: 90px;
+            background-color: #00dcff;
+            height: 30px;
+            border-radius: 5px;
+
+        }
+
+        .sbar button:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+
+        }
+
+        .sbar input:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+
+        }
+
+        .navbar li:hover {
+
+            transform: scale(1.1);
+            cursor: pointer;
+
+        }
+
+        .head span:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+
+        }
+
+
+
+        .content {
+            position: absolute;
+            top: 100px;
+            left: 0;
+            color: white;
+
+            height: 50%;
+
+
+        }
+
+        .content h2 {
+            text-align: center;
+            margin-top: 105px;
+        }
+
+        .content p {
+            width: 75%;
+            text-align: justify;
+            margin-top: 30px;
+            margin: auto;
+
+        }
+
+        .content a {
+            text-decoration: none;
+            color: whitesmoke;
+            display: inline;
+        }
+
+        .content div:hover {
+
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        .content div {
+            margin-left: 300px;
+            margin-top: 55px;
+            display: inline-block;
+            width: 114px;
+            border: 2px solid gray;
+            border-radius: 4px;
+            background-image: url(/image/sunrise-g75113d27e_1920.jpg);
+
+            text-align: center;
+            animation: popleft 2s 0.5s 1;
+            transition: popleft 1s ease-in-out;
+        }
+
+        @keyframes popup {
+            0% {
+                transform: rotateY(-45deg);
+            }
+
+            50% {
+                transform: rotateY(45deg)
+            }
+
+            100% {
+                transform: rotateY(-45deg);
+            }
+
+        }
+
+        @keyframes popleft {
+            from {
+                margin-left: 0px;
+            }
+
+            to {
+                margin-left: 300px;
+            }
+
+        }
+
+
+        @keyframes harry2 {
+            0% {
+                background: rgb(11, 178, 215);
+                background: linear-gradient(45deg, rgba(11, 178, 215, 1) 0%, rgba(32, 37, 36, 1) 100%);
+            }
+
+            25% {
+                background: rgb(11, 178, 215);
+                background: linear-gradient(45deg, rgba(11, 178, 215, 1) 10%, rgba(32, 37, 36, 1) 100%);
+            }
+
+            50% {
+                background: rgb(11, 178, 215);
+                background: linear-gradient(45deg, rgba(11, 178, 215, 1) 20%, rgba(32, 37, 36, 1) 100%);
+
+            }
+
+            75% {
+                background: rgb(11, 178, 215);
+                background: linear-gradient(45deg, rgba(11, 178, 215, 1) 30%, rgba(32, 37, 36, 1) 100%);
+            }
+
+            100% {
+                background: rgb(89, 101, 103);
+                background: linear-gradient(45deg, rgba(89, 101, 103, 1) 0%, rgba(11, 178, 215, 1) 40%, rgba(32, 37, 36, 1) 100%);
+            }
+        }
+
+        .container2 {
+            width: 100%;
+            height: 40vh;
+            margin: auto;
+            border-radius: 30px;
+            animation-name: harry2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            transition: all 1s ease-in-out;
+
+        }
+
+        .form1 {
+            position: absolute;
+            top: 170px;
+            right: 100px;
+
+            display: flex;
+            flex-direction: column;
+            height: 260px;
+            width: 370px;
+            z-index: 3;
+            align-items: center;
+            margin-left: 17px;
+            height: 30px;
+
+        }
+
+        .form1:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+
+        .frm1 {
+            width: 100%;
+            text-align: center;
+            color: white;
+
+        }
+
+        .frm2 {
+            color: white;
+            display: inline-block;
+            font-size: larger;
+            font-weight: bolder;
+            width: 100%;
+            text-align: center;
+        }
+
+        .frm3 {
+            width: 90%;
+            height: 1fr;
+            align-self: center;
+            margin-left: 17px;
+            height: 25px;
+            margin-top: 8px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+
+        .frm4 {
+            width: 90%;
+            height: 1fr;
+            margin-left: 17px;
+            height: 25px;
+            margin-top: 8px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+
+        }
+
+        .frm5 {
+            width: 90%;
+            height: 1fr;
+            margin-left: 17px;
+            height: 25px;
+            margin-top: 8px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+
+        }
+
+        .frm6 {
+            width: 90%;
+            height: 1fr;
+            margin-left: 17px;
+            height: 25px;
+            margin-top: 8px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+
+        }
+
+        .frm7 {
+            width: 50%;
+            height: 1fr;
+            height: 23px;
+            margin-left: 95px;
+            margin-top: 8px;
+
+        }
+
+        .container2 {
+            padding: 8px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 40px 1fr;
+            column-gap: 10px;
+            row-gap: 5px;
+
+        }
+
+        .c2item {
+            width: 100%;
+        }
+
+        .c2item img {
+            height: 32vh;
+            width: 97%;
+            border-radius: 5px;
+            box-shadow: 3px 3px blu2;
+        }
+
+        #c2box1 {
+            grid-column-start: 1;
+            grid-column-end: 4;
+
+        }
+
+        .banner {
+
+            background: rgb(12, 13, 14);
+            background: linear-gradient(90deg, rgba(12, 13, 14, 1) 0%, rgba(16, 37, 54, 1) 52%, rgba(75, 19, 90, 1) 100%);
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            
+            height: 50vh;
+
+        }
+        .b1,.b2,.b3{
+            border: 2px solid red;
+        }
+
+
+
+
+
+
+
+
+
+
+        .c2item button {
+            float: right;
+            margin-right: 50px;
+            width: 185px;
+            margin-top: -13px;
+            background-color: #0b8eff;
+            border-radius: 10px;
+        }
+        #c2box2:hover,#c2box3:hover,#c2box4:hover,#c2box1 button:hover{
+        
+            transform: scale(1.05);
+            cursor:pointer;
+        
+        }
+        .c2item h2 {
+            margin-left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <img src="/image/fashion-ga9e782f51_1920.jpg" alt="error"> -->
+        <header class="head">
+            <span>MkvPics </span>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/lrn1.html">Home</a></li>
+                    <li><a href="http://127.0.0.1:5500/lrn1.html">Tata Ipl</a></li>
+                    <li><a href="http://127.0.0.1:5500/lrn1.html">Tips</a></li>
+                    <li><a href="http://127.0.0.1:5500/lrn1.html">Movies</a></li>
+                </ul>
+            </nav>
+            <div class="sbar">
+                <input type="text" name="search" placeholder="Search">
+                <button>LogIn</button>
+
+            </div>
+        </header>
+
+    </div>
+    <div class="content">
+        <h2>Welcome to MkvPics</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, sed! Lorem, ipsum Lorem ipsum dolor sit
+            amet.</p>
+        <div><a href="http://127.0.0.1:5500/lrn1.html">Contact Us</a></div>
+
+
+    </div>
+
+
+    <div class="form1">
+        <h3 class="frm1">Get Your desired Pics from</h3>
+        <span class="frm2">MkvPics</span>
+        <form action="backend.php">
+            <input type="text" placeholder="Category" class="frm3">
+            <input type="text" placeholder="Color" class="frm4">
+            <input type="text" name="" placeholder="Size" class="frm5">
+            <input type="text" placeholder="Quality" class="frm6">
+            <button type="submit" class="frm7">Submit</button>
+        </form>
+
+    </div>
+    <div class="container2">
+        <div class="c2item" id="c2box1">
+            <h2>Welcome to Prime Video</h2>
+            <button>Rent Now</button>
+
+        </div>
+        <div class="c2item" id="c2box2"><img
+                src="/The-Family-Man-in-top-4-of-most-popular-shows-in-the-world_V_jpg--816x480-3g.webp" alt=""></div>
+        <div class="c2item" id="c2box3"><img
+                src="/amazon-original-farzi-achieves-the-biggest-opening-for-a-new-local-original-show-on-prime-video-in-india-001.jpg"
+                alt="">
+        </div>
+
+        <div class="c2item" id="c2box4"><img src="/download.jpeg" alt="">
+        </div>
+
+
+    </div>
+    <div class="banner">
+        <div class="b1">
+            <div class="g1"></div>
+            <div class="g2"></div>
+        </div>
+        <div class="b2">
+            <div class="g1"></div>
+            <div class="g2"></div>
+        </div>
+        <div class="b3">
+            <div class="g1"></div>
+            <div class="g2"></div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

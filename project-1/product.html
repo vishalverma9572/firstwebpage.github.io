@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid grey;
+            /* height: 100vh; */
+            text-align: center;
+        }
+
+        .flexitem {
+            margin-top: .25rem;
+            margin-bottom: .25rem;
+        }
+
+        .head {
+            background-color: rgb(117, 117, 185);
+            display: flex;
+            padding: 5px;
+            border-radius: 12px;
+        }
+
+        .logo {
+            flex-basis: 20%;
+            text-align: left;
+            padding-left: 4em;
+            font-size: 1.4rem;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: white;
+
+
+
+
+
+        }
+
+        .navbar {
+            flex-basis: 60%;
+
+            font-size: 1.4rem;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: white;
+
+
+
+        }
+
+        .navbar li {
+            display: inline;
+            list-style: none;
+        }
+
+        .navbar ul {
+            padding: 0px;
+            margin: 0px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .login {
+            flex-basis: 20%;
+            text-align: right;
+            padding-right: 4em;
+            font-size: 1.4rem;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: white;
+
+
+
+
+
+        }
+
+
+        .main {
+            background-color: aquamarine;
+            flex: 1;
+            display: flex;
+
+        }
+
+        .article,
+        .sidenav,
+        .aside {
+            background-color: sandybrown;
+            margin: 0.15rem;
+            padding-top: 30%;
+            padding-bottom: 30%;
+
+
+
+        }
+
+        .article {
+            flex: 1;
+        }
+
+        .sidenav,
+        .aside {
+            flex-basis: 20%;
+        }
+
+        .foot {
+            background-color: rgb(117, 117, 185);
+            height: 30px;
+            padding-top: 12px;
+            padding-bottom: 5px;
+
+        }
+
+        @media (max-width:600px) {
+
+            .main {
+                display: grid;
+                grid-template-rows: 1fr 2fr 1fr;
+
+            }
+
+
+            .navbar {
+                font-size: 1.2rem;
+            }
+
+            .head {
+                display: grid;
+                grid-template-rows: 30px 30px;
+                grid-template-columns: 1fr 1fr;
+                background-color: inherit;
+                row-gap: 3px;
+            }
+
+            .navbar {
+                order: 3;
+                grid-column-start: 1;
+                grid-column-end: 3;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                background-color: rgb(117, 117, 185);
+
+            }
+
+            .logo {
+                order: 1;
+
+                padding-left: 42px;
+                background-color: rgb(117, 117, 185);
+
+
+            }
+
+            .login {
+                order: 2;
+                padding-right: 42px;
+                background-color: rgb(117, 117, 185);
+            }
+
+            .foot {
+                float: bottom;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="flexitem head">
+        <div class="logo">logo</div>
+        <nav class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>Form</li>
+                <li>About</li>
+                <li>Live</li>
+            </ul>
+        </nav>
+        <div class="login">login</div>
+
+    </header>
+    <main class="flexitem main">
+
+        <div class="sidenav">sidenav</div>
+        <article class="article">article</article>
+        <div class="aside">aside</div>
+    </main>
+    <footer class="foot flexitem">FOOTER</footer>
+</body>
+
+</html>
